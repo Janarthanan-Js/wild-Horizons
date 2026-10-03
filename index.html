@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,11 +14,58 @@
 
     <h1>🌍 Wild Horizons</h1>
 
+    <!-- Load all destinations -->
     <button id="loadBtn">Load Destinations</button>
 
+    <hr>
+
+    <!-- Filters -->
+    <div id="filters">
+
+        <label for="country">Country:</label>
+
+        <select id="country">
+            <option value="">All Countries</option>
+            <option value="japan">Japan</option>
+            <option value="france">France</option>
+            <option value="australia">Australia</option>
+            <option value="new zealand">New Zealand</option>
+            <option value="peru">Peru</option>
+        </select>
+
+
+        <label for="continent">Continent:</label>
+
+        <select id="continent">
+            <option value="">All Continents</option>
+            <option value="asia">Asia</option>
+            <option value="europe">Europe</option>
+            <option value="oceania">Oceania</option>
+            <option value="south america">South America</option>
+        </select>
+
+
+        <label for="open">Open to Public:</label>
+
+        <select id="open">
+            <option value="">All</option>
+            <option value="true">Yes</option>
+            <option value="false">No</option>
+        </select>
+
+
+        <button id="filterBtn">Apply Filter</button>
+
+    </div>
+
+    <hr>
+
+    <!-- Destinations will appear here -->
     <div id="destinations"></div>
+
 
     <script src="script.js"></script>
 
 </body>
+
 </html>
